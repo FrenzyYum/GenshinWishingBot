@@ -1,0 +1,16 @@
+# Build results
+
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]in/
+[Oo]bj/
+
+# Rider
+
+.idea/
+
+# Dev-related
+
+assets/
+appsettings.local.json
