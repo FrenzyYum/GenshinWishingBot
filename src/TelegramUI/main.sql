@@ -88,6 +88,7 @@ INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('homastaff
 INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('lithicblade', 'Lithic Blade', 'Weapon', 4, 'A greatsword carved and chiseled from the very bedrock of Liyue.', 'AgACAgIAAxkBAAIJHGBYJmZ67xTZDu-a8MtGyAikdGSOAAJptzEb-lzISnm1Xvin_ivsMGRQmC4AAwEAAwIAA20AA4d2BwABHgQ');
 INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('lithicspear', 'Lithic Spear', 'Weapon', 4, 'A spear forged from the rocks of the Guyun Stone Forest. Its hardness knows no equal.', 'AgACAgIAAxkBAAIJHWBYJmrO3ftmg_Bd94Gg7seJi9VFAAJqtzEb-lzISvlk8fL1w8l9u_4Eny4AAwEAAwIAA20AAzEWAAIeBA');
 INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('endelegy', 'Elegy for the End', 'Weapon', 5, 'A bow as lovely as any bard''s lyre, its arrows pierce the heart like a lamenting sigh.', 'AgACAgIAAxkBAAIJG2BYJl_0myxtNZQMAwR4gmdbH7MJAAJotzEb-lzISgIUivYpcaIirwwIny4AAwEAAwIAA20AA1QXAAIeBA');
+INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('rosaria', 'Rosaria', 'Character', 4, 'Don''t overdo it. Let me take care of the dirty work.', 'AgACAgIAAxkBAAIPMmB8cZq0wCbDqvOTCUH5MOEEOuSaAAKVsjEbLR_pS3UEtZr2a7MeRpAHoi4AAwEAAwIAA3kAA_c-AQABHwQ');
 
 -- Table: UsersInChats
 CREATE TABLE UsersInChats (UserId STRING, ChatId STRING, HasRolled BOOLEAN DEFAULT (0), FourPity INTEGER DEFAULT (0), FivePity INTEGER DEFAULT (0), PRIMARY KEY (UserId, ChatId));

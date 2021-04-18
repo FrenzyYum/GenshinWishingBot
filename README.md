@@ -22,10 +22,6 @@ Requirements: .NET SDK 5.0 and SQLite CLI.
 5. Generate SQLite database in the same directory the script is in (`sqlite3 main.db`, `.read main.sql`).
 6. Run the project.
 
-## Contributing
-
-Feel free to report any bugs or suggestions via the Issues tab.
-
 ## License
 
 The source code is licensed under [Mozilla Public License 2.0](https://github.com/FrenzyYum/GenshinWishingBot/blob/master/LICENSE).
