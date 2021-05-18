@@ -16,12 +16,28 @@ namespace TelegramUI.Telegram
         internal static async void BotOnMessage(object sender, MessageEventArgs e)
         {
             if (e.Message == null || e.Message.Type != MessageType.Text) return;
+            
+            var entity = JsonSerializer.Serialize(e.Message, new JsonSerializerOptions()
+            {
+                WriteIndented = true,
+                Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault
+            });
+            
             try
             {
                 var msg = e.Message.Text;
                 if (msg.EndsWith(BotUsername()))
                 {
                     msg = msg.Substring(0, msg.Length - BotUsername().Length);
+                }
+
+                if (e.Message.Text == "/get" && e.Message.From.Id.ToString() == AdminId())
+                {
+                    await Bot.SendTextMessageAsync(
+                        e.Message.Chat,
+                        entity,
+                        replyToMessageId: e.Message.MessageId);
                 }
 
                 if (e.Message.Chat.Type == ChatType.Private)
@@ -118,13 +134,6 @@ namespace TelegramUI.Telegram
             }
             catch (Exception exception)
             {
-                var entity = JsonSerializer.Serialize(e.Message, new JsonSerializerOptions()
-                {
-                    WriteIndented = true,
-                    Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
-                    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault
-                });
-                
                 await Bot.SendTextMessageAsync(
                     AdminId(),
                     $"Error: {exception.Message}\n\nEntity: {entity}");
