@@ -89,6 +89,9 @@ INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('lithicbla
 INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('lithicspear', 'Lithic Spear', 'Weapon', 4, 'A spear forged from the rocks of the Guyun Stone Forest. Its hardness knows no equal.', 'AgACAgIAAxkBAAIJHWBYJmrO3ftmg_Bd94Gg7seJi9VFAAJqtzEb-lzISvlk8fL1w8l9u_4Eny4AAwEAAwIAA20AAzEWAAIeBA');
 INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('endelegy', 'Elegy for the End', 'Weapon', 5, 'A bow as lovely as any bard''s lyre, its arrows pierce the heart like a lamenting sigh.', 'AgACAgIAAxkBAAIJG2BYJl_0myxtNZQMAwR4gmdbH7MJAAJotzEb-lzISgIUivYpcaIirwwIny4AAwEAAwIAA20AA1QXAAIeBA');
 INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('rosaria', 'Rosaria', 'Character', 4, 'Don''t overdo it. Let me take care of the dirty work.', 'AgACAgIAAxkBAAIPMmB8cZq0wCbDqvOTCUH5MOEEOuSaAAKVsjEbLR_pS3UEtZr2a7MeRpAHoi4AAwEAAwIAA3kAA_c-AQABHwQ');
+INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('yanfei', 'Yanfei', 'Character', 4, 'Wrath of the flame!', 'AgACAgIAAxkBAAIYm2Ck7aCoY_6HF0DkPcFyC8AQzrslAAIvszEbFNkgSVIuf_y-ZZQh2_ESpC4AAwEAAwIAA3kAA6FEAQABHwQ');
+INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('eula', 'Eula', 'Character', 5, 'Vengeance will be mine!', 'AgACAgIAAxkBAAIYmmCk7Z1Sp8zi_CrH3ht0WBxa_cHeAAIuszEbFNkgSXJgjJGMAAH71JN2gKMuAAMBAAMCAAN5AANg_AACHwQ');
+INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('brokenpines', 'Song of Broken Pines', 'Weapon', 5, 'A greatsword as light as the sigh of grass in the breeze, yet as merciless to the corrupt as a typhoon.', 'AgACAgIAAxkBAAIYmWCk7Zmu6QQdgIlFBOGYdcuueHG8AAItszEbFNkgSaf5irdOyAxhzDVDni4AAwEAAwIAA20AA4oQBAABHwQ');
 
 -- Table: UsersInChats
 CREATE TABLE UsersInChats (UserId STRING, ChatId STRING, HasRolled BOOLEAN DEFAULT (0), FourPity INTEGER DEFAULT (0), FivePity INTEGER DEFAULT (0), PRIMARY KEY (UserId, ChatId));
