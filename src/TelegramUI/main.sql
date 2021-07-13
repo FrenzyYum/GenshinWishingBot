@@ -94,7 +94,7 @@ INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('eula', 'E
 INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('brokenpines', 'Song of Broken Pines', 'Weapon', 5, 'A greatsword as light as the sigh of grass in the breeze, yet as merciless to the corrupt as a typhoon.', 'AgACAgIAAxkBAAIYmWCk7Zmu6QQdgIlFBOGYdcuueHG8AAItszEbFNkgSaf5irdOyAxhzDVDni4AAwEAAwIAA20AA4oQBAABHwQ');
 INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('freedomsworn', 'Freedom-Sworn', 'Weapon', 5, 'A straight sword, azure as antediluvian song, and as keen as the oaths of freedom taken in the Land of Wind.', 'AgACAgIAAxkBAAIx42De9TsjN4CTG2BLrv_be9K7cUDDAAJztTEbq-D4Sq--qtj06brvAQADAgADbQADIAQ');
 INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('mitterwaltz', 'Mitternachts Waltz', 'Weapon', 4, 'A bow painted the color of transgression and nights of illusion.', 'AgACAgIAAxkBAAIx4mDe9TvxQ8IlblUEl_PZATFUAjoOAAJytTEbq-D4SrDcZ1My8CI4AQADAgADbQADIAQ');
-INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('kazuha', 'Kaedehara Kazuha', 'Character', 5, 'Fallen leaves, adorn my night!', 'AgACAgIAAxkBAAIx4WDe9TtzUtOn8JgUjzVBVbj78GQKAAJxtTEbq-D4ShOhuRDkuD3bAQADAgADeQADIAQ');
+INSERT INTO Items (Id, Name, Type, Stars, Description, Image) VALUES ('kazuha', 'Kaedehara Kazuha', 'Character', 5, 'Fallen leaves, adorn my night!', 'AgACAgIAAxkBAAI6dWDt6zwyKsFhnQvX9jvn9olU57hgAAJRtDEb-PloSz4mK_OLvXYxAQADAgADeQADIAQ');
 
 -- Table: UsersInChats
 CREATE TABLE UsersInChats (UserId STRING, ChatId STRING, HasRolled BOOLEAN DEFAULT (0), FourPity INTEGER DEFAULT (0), FivePity INTEGER DEFAULT (0), PRIMARY KEY (UserId, ChatId));
