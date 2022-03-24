@@ -25,4 +25,5 @@ Requirements: .NET SDK 5.0
 ## License
 
 The source code is licensed under Mozilla Public License 2.0.
+
 Genshin Impact content and materials are a copyright of miHoYo Co., Ltd. No copyright infringement intended.
