@@ -1,4 +1,6 @@
-﻿using System.Data.SQLite;
+﻿// SPDX-License-Identifier: MPL-2.0
+
+using System.Data.SQLite;
 using Telegram.Bot.Types;
 using static TelegramUI.Startup.Config;
 

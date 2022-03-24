@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿// SPDX-License-Identifier: MPL-2.0
+
+using Microsoft.Extensions.Configuration;
 using Telegram.Bot;
 
 namespace TelegramUI.Startup

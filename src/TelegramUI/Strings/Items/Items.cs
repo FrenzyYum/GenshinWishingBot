@@ -1,4 +1,6 @@
-﻿using System.Text.Json.Serialization;
+﻿// SPDX-License-Identifier: MPL-2.0
+
+using System.Text.Json.Serialization;
 
 namespace TelegramUI.Strings.Items
 {

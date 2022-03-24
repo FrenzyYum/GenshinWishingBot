@@ -1,4 +1,6 @@
-﻿using System;
+﻿// SPDX-License-Identifier: MPL-2.0
+
+using System;
 using TelegramUI.Scheduler;
 using TelegramUI.Telegram;
 using static TelegramUI.Startup.Config;
