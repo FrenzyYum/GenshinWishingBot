@@ -19,8 +19,7 @@ Requirements: .NET SDK 5.0
 1. Clone the repository.
 2. Build the solution to restore dependencies.
 3. Change the `appsettings.json` token, bot username and admin id accordingly.
-4. Set links to images (see [here](https://github.com/FrenzyYum/GenshinWishingBot/blob/master/src/TelegramUI/Commands/Wish.cs#L116))
-5. Run the project.
+4. Run the project.
 
 ## License
 

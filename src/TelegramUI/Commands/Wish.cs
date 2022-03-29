@@ -112,20 +112,18 @@ namespace TelegramUI.Commands
             var textsList = JsonSerializer.Deserialize<List<string>>(textsText);
             
             result[0] = string.Format(textsList[0], wish.Description, HttpUtility.HtmlEncode(message.From.FirstName), wish.Name, wish.Stars, wish.Type);
-            
-            // All images are in /assets/images folder. It's up to you to upload them somewhere and serve via the links below.
 
             result[1] =
-                $"https://website.com/assets/images/{wish.Id}.webp";
+                $"https://i0.wp.com/raw.githubusercontent.com/FrenzyYum/GenshinWishingBot/master/assets/images/{wish.Id}.webp";
             
             if (wish.Id is "barbara" or "jean")
             {
-                result[1] = $"https://website.com/assets/images/{wish.Id}-summer.webp";
+                result[1] = $"https://i0.wp.com/raw.githubusercontent.com/FrenzyYum/GenshinWishingBot/master/assets/images/{wish.Id}-summer.webp";
             }
             
             if (wish.Id is "keqing" or "ningguang")
             {
-                result[1] = $"https://website.com/assets/images/{wish.Id}-lanternrite.webp";
+                result[1] = $"https://i0.wp.com/raw.githubusercontent.com/FrenzyYum/GenshinWishingBot/master/assets/images/{wish.Id}-lanternrite.webp";
             }
             
             return result;
